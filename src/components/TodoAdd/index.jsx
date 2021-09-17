@@ -20,8 +20,10 @@ export default function TodoAdd({
   // Lợi dụng useEffect để bắt sự thay đổi của fixingTodo để biết được đang ở chức năng Sửa và thay đổi isEditing mà không cần tạo và truyền nó từ App
   useEffect(() => {
     if (fixingTodo != null) {
+      console.log("hello");
       setIsEditing(true);
       setNewTodo(fixingTodo);
+
       // setisAdding(true);
     }
     return () => {};
@@ -50,6 +52,7 @@ export default function TodoAdd({
   const turnOffAdding = () => {
     setisAdding(false);
     setIsEditing(false);
+    setFixingTodo(null);
   };
   const addBtnOnClick = () => {
     addNewTodo();
