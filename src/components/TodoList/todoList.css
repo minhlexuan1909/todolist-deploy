@@ -1,0 +1,111 @@
+.todoList {
+  padding: 0px 20px;
+  width: 100%;
+}
+
+.todoList__btns {
+  display: flex;
+  flex-direction: row;
+}
+
+.todoList__btns > * {
+  margin-right: 15px;
+}
+
+.todoList__sortBtn {
+  height: 35px;
+  padding: 0px 15px;
+  border-radius: 0px;
+  background-color: RGB(209, 63, 0);
+}
+
+.todoList__sortSelect {
+  height: 35px;
+  border-radius: 0px;
+}
+
+.todoList__sortSelect option[disabled]:first-child {
+  display: none;
+}
+
+.todoList__addBtn {
+  height: 35px;
+  width: 200px;
+  background-color: RGB(37, 114, 169);
+  color: white;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.todoList__search > * {
+  height: 35px;
+}
+
+.todoList__searchBtn {
+  background-color: RGB(66, 135, 245);
+  padding: 10px 15px;
+  border-radius: 0px;
+}
+
+.table__fixBtn,
+.table__deleteBtn {
+  height: 25px;
+  width: 70px;
+  margin-right: 5px;
+}
+
+.table__fixBtn {
+  background-color: RGB(215, 180, 57);
+}
+
+.table__deleteBtn {
+  background-color: RGB(169, 37, 37);
+}
+
+.todoList__table {
+  width: 100%;
+  background-color: white;
+}
+
+.table__level {
+  width: 72px;
+  /* background-color: RGB(242, 39, 31); */
+  color: white;
+  font-size: 13px;
+  /* font-weight: ; */
+  padding: 1px 8px 1px 8px;
+  border-radius: 10px;
+}
+table,
+tr,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.table__title {
+  font-weight: bold;
+}
+
+.sortBtn {
+  margin-left: 5px;
+}
+
+.todoList__levelGroup {
+  margin-top: 20px;
+}
+
+.levelGroup__groupBtn {
+  background-color: honeydew;
+  color: black;
+  padding: 10px;
+  margin-right: 10px;
+  font-weight: normal;
+  text-transform: none;
+}
