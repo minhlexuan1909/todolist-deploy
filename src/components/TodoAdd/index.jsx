@@ -49,6 +49,7 @@ export default function TodoAdd({
   };
   const turnOffAdding = () => {
     setisAdding(false);
+    setIsEditing(false);
   };
   const addBtnOnClick = () => {
     addNewTodo();

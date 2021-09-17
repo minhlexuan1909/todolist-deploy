@@ -27,8 +27,8 @@ const TodoList = ({
     else if (text === "Bình thường") return "warning";
     else return "success";
   };
-  const selectFixTodo = (index) => {
-    setFixingTodo(todoList[index]);
+  const selectFixTodo = (item) => {
+    setFixingTodo(item);
     setisAdding(true);
   };
   const sortID = () => {
@@ -152,7 +152,7 @@ const TodoList = ({
               <td>
                 <button
                   className="table__fixBtn btn"
-                  onClick={() => selectFixTodo(index)}
+                  onClick={() => selectFixTodo(item)}
                 >
                   Sửa
                 </button>
