@@ -45,7 +45,7 @@ export default function TodoAdd({
     setTodo([...todoList, newTodo]);
     setNewTodo({
       id: 1,
-      name: "Pending",
+      name: "",
       level: "Nguy cấp",
     });
   };
