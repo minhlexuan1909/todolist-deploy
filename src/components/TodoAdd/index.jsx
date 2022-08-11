@@ -12,7 +12,7 @@ export default function TodoAdd({
 }) {
   const [newTodo, setNewTodo] = useState({
     id: 1,
-    name: "Pending",
+    name: "",
     level: "Nguy cấp",
   });
   const [isEditing, setIsEditing] = useState(false);
@@ -82,6 +82,7 @@ export default function TodoAdd({
               name="name"
               value={newTodo.name}
               onChange={updateNewTodo}
+              placeholder="Điền tên công việc"
             />
           </div>
 
